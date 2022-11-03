@@ -1,0 +1,443 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto' , sans-serif;
+    background-image: url("images/patt.png");
+}
+.container {
+    width: 1200px;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.header {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+    display: flex;
+}
+[class*="col-"] {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.d-flex {
+    display: flex;
+}
+.col-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+.col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.logo {
+    margin-top: 7px;
+}
+.menu {
+    display: flex;
+}
+.menu li {
+    width: 25%;
+    border-left: 1px solid #2c71b8;
+}
+.menu li:last-child {
+    border-right: 1px solid #2c71b8;
+}
+.menu a {
+    display: block;
+    height: 50px;
+    text-decoration: none;
+    font-size: 21px;
+    color: #2c71b8;
+    line-height: 50px;
+    text-align: center;
+}
+.header-search {
+    flex: 0 0 75%;
+    max-width: 75%;
+    position: absolute;
+}
+.header-cart {
+    flex: 0 0 25%;
+    max-width: 25%;
+    position: relative;
+    left: 230px;
+}
+.input-search {
+    width: 200px;
+    height: 40px;
+    padding-left: 20px;
+    border: 1px solid #2c71b8;
+    background-color: transparent;
+}
+.button-search {
+    width: 30px;
+    height: 30px;
+    background-color: #2c71b8;
+    border: 1px solid #2c71b8;
+    background-image: url("images/search.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    right: 40px;
+    top: 9px;
+}
+.button-cart {
+    background-image: url("images/cart-blue.png");
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    border: 1px solid white;
+    background-color: #fff;
+    position: absolute;
+    margin-top: 4px;
+}
+
+.products-count {
+    position: relative;
+    right: 10px;
+    bottom: 10px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #2c71b8;
+    border-radius: 50%;
+    background-color: #2c71b8;
+    color: #fff;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main {
+    display: flex;
+    height: 400px;
+    align-items: center;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+.slider {
+    width: 1200px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+    position: relative;
+}
+.image-left {
+    background-image: url("images/left.png");
+    height: 50px;
+    width: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    left: 15px;
+    top: 175px;
+}
+.image-right {
+    background-image: url("images/right.png");
+    height: 50px;
+    width: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: 15px;
+    top: 175px;
+}
+.slide {
+    font-size: 100px;
+    font-weight: lighter;
+    color: white;
+}
+.slider-input {
+    display: flex;
+}
+.slider-border {
+    width: 10px;
+    height: 10px;
+    border: 1px solid white;
+    margin: 0 20px;
+}
+.slider-border:nth-child(3) {
+    background-color: white;
+}
+.footer {
+    display: flex;
+    height: 2330px;
+}
+.size-device {
+    width: 285px;
+    max-width: 285px;
+    height: 840px;
+    max-height: 840px;
+    background-color: #568dc6;
+    color: #fff;
+    border-right: 1px solid white;
+    margin-left: 15px;
+}
+.name-bold {
+    font-size: 21px;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-top: 60px;
+}
+.name-bold:first-child {
+    margin-top: 0;
+    padding-top: 30px;
+}
+.name-products input {
+    margin-left: 30px;
+    padding-left: 0;
+}
+.name-products li {
+    margin-top: 20px;
+    font-size: 21px;
+}
+.text-align-center {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 21px;
+}
+.button-size button {
+    width: 210px;
+    height: 50px;
+    border: 1px solid white;
+    background-color: #2c71b8;
+    color: white;
+    font-size: 21px;
+    font-weight: bold;
+    margin: 15px 30px;
+}
+.about-device {
+    width: 915px;
+    max-width: 915px;
+}
+.home-page {
+    font-size: 14px;
+    color: #96b8dc;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.laptops-and-tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 15px;
+    margin-top: 30px;
+    color: white;
+}
+.text-laptop {
+    font-size: 48px;
+    font-weight: bold;
+}
+.sort {
+    width: 270px;
+    height: 40px;
+    border: 1px solid white;
+}
+.sort li {
+    font-size: 21px;
+    line-height: 40px;
+    padding-left: 20px;
+}
+.image-icon-down {
+    background-image: url("images/icon-down2.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 10%;
+    margin-right: 10px;
+}
+.device-name {
+    display: flex;
+    width: 915px;
+    max-width: 915px;
+}
+.device-all {
+    height: 650px;
+    max-height: 650px;
+    width: 270px;
+    max-width: 270px;
+    margin-top: 50px;
+    margin-left: 30px;
+    border: 1px solid white;
+}
+.background-image {
+    background-image: url("images/laptop.png");
+    height: 170px;
+    background-color: #cdddee;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.like-blue {
+    background-image: url("images/like-blue.png");
+    background-repeat: no-repeat;
+    border: 1px solid #548cc5;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 50px;
+}
+.border-blue {
+    background-image: url("images/border-blue.png");
+    background-repeat: no-repeat;
+    border: 1px solid #548cc5;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.device-numder {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 20px;
+}
+.device-text {
+    font-size: 21px;
+    color: white;
+    padding-left: 15px;
+}
+.about {
+    display: flex;
+    padding-top: 20px;
+}
+.about:first-child {
+    padding-top: 15px;
+}
+.about-bold {
+    font-weight: bold;
+    padding-right: 8px;
+}
+.device-price {
+    display: flex;
+    color: white;
+    font-weight: bold;
+    font-size: 48px;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 25px; 
+}
+.coin {
+    font-size: 24px;
+    padding-left: 10px;
+    line-height: 30px;
+}
+.more-details {
+    height: 50px;
+    width: 210px;
+    border: 1px solid white;
+    background-color: transparent;
+    margin-left: 29px;
+    margin-right: 29px;
+    color: white;
+    font-size: 21px;
+    font-weight: bold;
+}
+.position-button {
+    position: relative;
+}
+.add-to-cart {
+    height: 50px;
+    width: 210px;
+    margin-left: 29px;
+    margin-right: 29px;
+    color: white;
+    font-size: 21px;
+    font-weight: bold;
+    background-color: #568dc6;
+    border: 1px solid #568dc6;
+    margin-top: 15px;
+    padding-right: 30px;
+}
+.image-cart {
+    background-image: url("images/cart.png");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 40px;
+    top: 30px;
+}
+.background-image-second {
+    background-image: url("images/ps.png");
+    height: 170px;
+    background-color: #cdddee;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.like-white {
+    background-image: url("images/like-white.png");
+    background-color: #2c71b8;
+    background-repeat: no-repeat;
+    border: 1px solid #548cc5;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 50px;
+}
+.background-image-third {
+    background-image: url("images/watch.png");
+    height: 170px;
+    background-color: #cdddee;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.border-white {
+    background-image: url("images/square-white.png");
+    background-repeat: no-repeat;
+    border: 1px solid #2c71b8;
+    background-color: #2c71b8;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.load-more {
+    font-size: 36px;
+    color: white;
+    margin-top: 40px;
+    text-align: center; 
+}
+.header-end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2c71b8;
+    font-size: 21px;
+}
+.c-border {
+    font-size: 12px;
+    height: 15px;
+    width: 15px;
+    border: 1px solid #2c71b8;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 8px;
+}
+
+ 
