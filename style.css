@@ -4,6 +4,7 @@
 body {
     font-family: 'Roboto' , sans-serif;
     background-image: url("images/patt.png");
+    width: 1200px;
 }
 .container {
     width: 1200px;
@@ -28,6 +29,7 @@ body {
 }
 .d-flex {
     display: flex;
+    position: relative;
 }
 .col-3 {
     flex: 0 0 25%;
@@ -60,14 +62,12 @@ body {
     text-align: center;
 }
 .header-search {
-    flex: 0 0 75%;
-    max-width: 75%;
-    position: absolute;
+    line-height: 50px;
 }
 .header-cart {
     flex: 0 0 25%;
     max-width: 25%;
-    position: relative;
+    position: absolute;
     left: 230px;
 }
 .input-search {
@@ -86,9 +86,9 @@ body {
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: center;
-    position: relative;
-    right: 40px;
-    top: 9px;
+    position: absolute;
+    right: 95px;
+    top: 11px;
 }
 .button-cart {
     background-image: url("images/cart-blue.png");
@@ -100,13 +100,13 @@ body {
     border: 1px solid white;
     background-color: #fff;
     position: absolute;
-    margin-top: 4px;
+    top: 6px;
+    left: 7px;
 }
-
 .products-count {
-    position: relative;
-    right: 10px;
-    bottom: 10px;
+    position: absolute;
+    bottom: -16px;
+    left: -3px;
     width: 20px;
     height: 20px;
     border: 1px solid #2c71b8;
@@ -439,5 +439,4 @@ body {
     text-align: center;
     margin-right: 8px;
 }
-
  
