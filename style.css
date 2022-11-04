@@ -4,7 +4,7 @@
 body {
     font-family: 'Roboto' , sans-serif;
     background-image: url("images/patt.png");
-    width: 1200px;
+    /* width: 1200px; */
 }
 .container {
     width: 1200px;
@@ -439,4 +439,20 @@ body {
     text-align: center;
     margin-right: 8px;
 }
+@media(max-width:1200px) {
+    .header {
+     width: 120%; 
+    }
+   }
+   @media(max-width:768px) {
+    .header {
+     width: 157%; 
+    }
+   }
+   @media(max-width:425px) {
+    .header {
+     width: 283%; 
+    }
+   }
+
  
