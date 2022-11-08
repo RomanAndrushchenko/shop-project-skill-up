@@ -44,6 +44,12 @@ body {
 .menu {
   display: flex;
 }
+.menu li:hover {
+  background-color: #2c71b8;
+}
+.menu li a:hover {
+  color: white;
+}
 .submenu {
   visibility: hidden;
 }
@@ -51,17 +57,26 @@ ul .submenu {
   position: absolute;
   background-color: #2c71b8;
   top: 50px;
-  left: 0px;
+  left: -1px;
 }
 .menu li:hover .submenu {
   visibility: visible;
+  z-index: 10;
 }
 .menu .submenu li {
-  width: 284px;
+  width: 285px;
 }
 .submenu li a {
   color: white;
-  width: 283px;
+  width: 285px;
+  text-align: left;
+  padding-left: 20px;
+}
+.submenu li:hover {
+  background-color: white;
+}
+.submenu li a:hover {
+  color: #2c71b8;
 }
 .menu li {
   width: 25%;
@@ -79,6 +94,15 @@ ul .submenu {
   color: #2c71b8;
   line-height: 50px;
   text-align: center;
+}
+.background-image-down {
+  background-image: url("images/down16px.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  background-position: center;
+  top: 2%;
+  right: -3%;
+  width: 30px;
 }
 .header-search {
   line-height: 50px;
@@ -269,13 +293,49 @@ ul .submenu {
   font-size: 21px;
   line-height: 40px;
   padding-left: 20px;
+  height: 38px;
+  position: relative;
+  width: 268px;
 }
+.sort li a {
+  color: white;
+  text-decoration: none;
+}
+.submenu-sort {
+  position: absolute;
+  width: 270px;
+  left: -1px;
+  margin-top: -1px;
+  visibility: hidden;
+  border: 1px solid white;
+}
+.submenu-sort li {
+  background-color: #2c71b8;
+}
+.submenu-sort li:hover {
+  background-color: white;
+}
+.submenu-sort li a:hover {
+  color: #2c71b8;
+}
+.sort li:hover .submenu-sort {
+  visibility: visible;
+  z-index: 10;
+}
+.submenu-sort li a {
+  color: white;
+  text-decoration: none;
+}
+
 .image-icon-down {
   background-image: url("images/icon-down2.png");
   background-repeat: no-repeat;
-  background-position: right;
-  background-size: 10%;
-  margin-right: 10px;
+  background-position: center;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 5%;
+  top: 20%;
 }
 .device-name {
   display: flex;
