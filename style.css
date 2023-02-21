@@ -225,7 +225,6 @@ ul .submenu {
 } */
 .footer {
   display: flex;
-  height: 2330px;
 }
 .size-device {
   width: 285px;
@@ -352,8 +351,6 @@ ul .submenu {
   max-width: 915px;
 }
 .device-all {
-  height: 650px;
-  max-height: 650px;
   width: 270px;
   max-width: 270px;
   margin-top: 50px;
@@ -435,31 +432,32 @@ ul .submenu {
   padding-left: 10px;
   line-height: 30px;
 }
+.more-detail {
+  width: 210px;
+  margin: 15px auto;
+}
 .more-details {
   height: 50px;
   width: 210px;
   border: 1px solid white;
   background-color: transparent;
-  margin-left: 29px;
-  margin-right: 29px;
   color: white;
   font-size: 21px;
   font-weight: bold;
 }
 .position-button {
   position: relative;
+  width: 210px;
+  margin: 15px auto;
 }
 .add-to-cart {
   height: 50px;
   width: 210px;
-  margin-left: 29px;
-  margin-right: 29px;
   color: white;
   font-size: 21px;
   font-weight: bold;
   background-color: #568dc6;
   border: 1px solid #568dc6;
-  margin-top: 15px;
   padding-right: 30px;
 }
 .image-cart {
@@ -468,8 +466,8 @@ ul .submenu {
   width: 20px;
   height: 20px;
   position: absolute;
-  right: 40px;
-  top: 30px;
+  right: 5%;
+  top: 30%;
 }
 .background-image-second {
   background-image: url("images/ps.png");
@@ -502,7 +500,7 @@ ul .submenu {
 .load-more {
   font-size: 36px;
   color: white;
-  margin-top: 40px;
+  margin: 40px auto;
   text-align: center;
 }
 .header-end {

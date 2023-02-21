@@ -108,7 +108,30 @@ function Counter(
     this.domRefs.incrementBtn.disabled = count >= maxCount;
   };
   this.toggleButtonState();
-  console.log(this);
+
+  this.increment = function () {
+    this.domRefs.inputField.value = +this.domRefs.inputField.value + 1;
+    this.toggleButtonState();
+  };
+  this.decrement = function () {
+    this.domRefs.inputField.value = +this.domRefs.inputField.value - 1;
+    this.toggleButtonState();
+  };
+
+  this.domRefs.incrementBtn.addEventListener(
+    "click",
+    this.increment.bind(this)
+  );
+  this.domRefs.decrementBtn.addEventListener(
+    "click",
+    this.decrement.bind(this)
+  );
 }
 
 let counter1 = new Counter(incrementBtns[0], decrementBtns[0], inputFields[0]);
+const counters = [];
+inputFields.forEach(
+  (counterItem, i) =>
+    (counters[i] = new Counter(incrementBtns[i], decrementBtns[i], counterItem))
+);
+console.log(counters);
